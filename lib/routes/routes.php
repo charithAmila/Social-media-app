@@ -1,11 +1,12 @@
 <?php
+/**
+ * routes is handdle POST, GET request
+ */
 require_once (__DIR__.'/../../vendor/autoload.php');
 use controllers\SocialMediaPost;
 
 $controller = new SocialMediaPost();
-/*
-* posts
-*/
+
 if(isset($_POST['s_post']))
 {
     $tw = $controller->TwitterPost($_POST['s_post']);
