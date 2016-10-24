@@ -34,6 +34,12 @@ return [
             'url_postStatusUpdate'=>'https://api.twitter.com/1.1/statuses/update.json'
 		   ];
 ```
+# Usage
+After you clone this repo to your desktop, go to its root directory and run composer update to install its dependencies.
+
+Once the dependencies are installed, you can add your configuration data mentioned mentioned above.
+
+Then you can update your status on Twitter and facebook walls as you wish.
 
 
 
