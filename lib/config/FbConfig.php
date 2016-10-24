@@ -12,9 +12,9 @@ class FbConfig
     public static function configData()
     {
         return [
-                'appId'=>'Your app id', // appId get from your facebook app
-                'secret'=>'Your secrt', // secret get from your facebook app
-                'accessToken'=>'your access Token', // accessToken get from your facebook app
+                'appId'=>'Your app id', // appId  from your facebook app
+                'secret'=>'Your secrt', // secret  from your facebook app
+                'accessToken'=>'your access Token', // accessToken  from your facebook app
                ];
    }
 }
