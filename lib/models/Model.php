@@ -7,7 +7,7 @@ class Model
 {
     public $media;
     /*
-     * Validate youser post is empty or not
+     * Validate  posts
      * @return type true or false
      * if validate is pass return true
      * if not validate is pass return false
