@@ -5,6 +5,9 @@ use models\Model;
 use Facebook;
 use config\FbConfig;
 
+/**
+ * FaceBookPosts is the model behind the facebook posts.
+ */
 class FaceBookPosts extends Model
 {
     public $text;
@@ -12,9 +15,13 @@ class FaceBookPosts extends Model
     
     public function __construct() 
     {
-        
         $this->conf_array = FbConfig::configData();
     }
+    
+    /**
+     * Send posts to the Facebook connection with facebook api
+     * @return string
+     */
     public function StatusUpdate()
     {
         
@@ -24,25 +31,25 @@ class FaceBookPosts extends Model
 			'default_graph_version' => 'v2.6'
 		]);
 		
-		$linkData = [
+	$linkData = [
                     'message' => $this->text,
-		];
-		try 
-		{
-			// Returns a `Facebook\FacebookResponse` object
-			$response  = $fb->post('/me/feed', $linkData, $this->conf_array['accessToken']);
-			$graphNode = $response->getGraphNode();
-                        return 'success';
-		} 
-		catch(Facebook\Exceptions\FacebookResponseException $e) 
-		{
-                        return 'error';
+                    ];
+	try 
+	{
+        // Returns a `Facebook\FacebookResponse` object
+        $response  = $fb->post('/me/feed', $linkData, $this->conf_array['accessToken']);
+        $graphNode = $response->getGraphNode();
+            return 'success';
+	} 
+	catch(Facebook\Exceptions\FacebookResponseException $e) 
+	{
+            return 'error';
                         
-		} 
-		catch(Facebook\Exceptions\FacebookSDKException $e)
-		{
-                        return 'error';
-		}
+	} 
+	catch(Facebook\Exceptions\FacebookSDKException $e)
+	{
+            return 'error';
+	}
                 
 		
 		
