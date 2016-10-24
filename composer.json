@@ -1,15 +1,14 @@
 {
 	"require" : {
                 "facebook/graph-sdk" : "~5.0",
-                "j7mbo/twitter-api-php": "dev-master",
-		"google/apiclient": "^2.0"
+                "j7mbo/twitter-api-php": "dev-master"
   	},
 	"autoload":{
 		"psr-0":{
-                "routes":"lib/",
-                "models": "lib/",
-                "controllers": "lib/",
-                "config": "lib/"
+                    "routes":"lib/",
+                    "models": "lib/",
+                    "controllers": "lib/",
+                    "config": "lib/"
 		}
 	}
 }
