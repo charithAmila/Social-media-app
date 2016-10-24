@@ -16,13 +16,16 @@ to configuration like bellow.
 
 1. FbConfig.php
 add your facebook configuration detail bellow array.
+```php
   return [
             'appId'=>'Your app id', // appId  from your facebook app
             'secret'=>'Your secrt', // secret  from your facebook app
             'accessToken'=>'your access Token', // accessToken  from your facebook app
           ];
+```
 2. TwitterConfig.php
 add your twitter configuration detail bellow array.
+```php
 return [
             'oauth_access_token'=>'your auth access token',
             'oauth_access_token_secret'=>'your auth access token secret',
@@ -30,6 +33,7 @@ return [
             'consumer_secret'=>'your consumer secret',
             'url_postStatusUpdate'=>'https://api.twitter.com/1.1/statuses/update.json'
 		   ];
+```
 
 
 
