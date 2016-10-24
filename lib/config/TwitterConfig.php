@@ -1,21 +1,24 @@
 <?php
 namespace config;
 /**
-* 
-*/
+ * TwitterConfig class provide twitter user configuration data.
+ */
 class TwitterConfig
 {
-        
+        /**
+         * Privide User Twitter Credentials
+         * @return type array
+         */
         public static function configData()
         {
             return [
-                        'oauth_access_token'=>'789775527200428032-mv5RWiB6ZF8mJFKBhVLLffLD4LZgRmt',
-                        'oauth_access_token_secret'=>'aWIr9ZDv8ii0LfQmzKJOZrHPMe3CXRgkAwFrP37YAue6R',
-                        'consumer_key'=>'7bOiGhm9foi4CHEcpYLDZ9BtM',
-                        'consumer_secret'=>'dJVIDwoTp7NZ2d3Ku0rP5sJsKQtxP9em51EMUDjG5o13YBr9jN',
+                        'oauth_access_token'=>'your auth access token',
+                        'oauth_access_token_secret'=>'your auth access token secret',
+                        'consumer_key'=>'your consumer key',
+                        'consumer_secret'=>'your consumer secret',
                         'url_postStatusUpdate'=>'https://api.twitter.com/1.1/statuses/update.json'
 
-		];
+		   ];
         }
 }
 
